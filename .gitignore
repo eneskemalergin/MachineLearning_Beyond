@@ -1,4 +1,4 @@
-# Byte-compiled / optimized / DLL files
+q# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 
@@ -61,3 +61,4 @@ target/
 .DS_Store
 
 .ipynb_checkpoints/
+.t7
