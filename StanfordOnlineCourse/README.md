@@ -9,7 +9,7 @@ This course provides a broad introduction to machine learning, datamining, and s
 
 This Course by Andrew Ng the first and _(personal opinion)_ the most fundamental step to become a full Machine Learning Expert.  
 
-- [Week 1]()
+- [Week 1](https://github.com/eneskemalergin/MachineLearning_Beyond/tree/master/StanfordOnlineCourse/Week1)
 - Week 2
 - Week 3
 - Week 4

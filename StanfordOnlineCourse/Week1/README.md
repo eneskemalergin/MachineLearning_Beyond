@@ -1,7 +1,7 @@
 # Week 1
 
 
-- [Introduction]()
-- [Model and Cost Function]()
+- [Introduction](https://github.com/eneskemalergin/MachineLearning_Beyond/blob/master/StanfordOnlineCourse/Week1/introduction.md)
+- [Model and Cost Function](https://github.com/eneskemalergin/MachineLearning_Beyond/blob/master/StanfordOnlineCourse/Week1/model_cost_function.md)
 - [Parameter Learning]()
 - [Linear Algebra Review]()
