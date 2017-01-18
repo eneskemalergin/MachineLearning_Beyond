@@ -27,3 +27,22 @@ On a side note, we should adjust our parameter ```α``` to ensure that the gradi
 After each step, while the point gets closer to the minimum, the derivative's result gets smaller. Without we decreasing the value of ```α```, the steps are getting smaller.
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/RDcJ-KGXEeaVChLw2Vaaug_cb782d34d272321e88f202940c36afe9_Screenshot-2016-11-03-00.06.00.png?expiry=1484784000000&hmac=esvgcLgQKj0IQKrViA1360SP-3JurYHFA_jfkjOaAw0)
+
+
+When specifically applied to the case of linear regression, a new form of the gradient descent equation can be derived. We can substitute our actual cost function and our actual hypothesis function and modify the equation to :
+
+Repeat until convergence {
+
+  ![](http://bit.ly/2jz3A5M)
+
+  ![](http://bit.ly/2jyUDZV)
+
+}
+
+
+So, this is simply gradient descent on the original cost function J. This method looks at every example in the entire training set on every step, and is called __batch gradient descent.__ Note that, while gradient descent can be susceptible to local minima in general, the optimization problem we have posed here for linear regression has only one global, and no other local, optima; thus gradient descent always converges (assuming the learning rate α is not too large) to the global minimum. Indeed, J is a convex quadratic function. Here is an example of gradient descent as it is run to minimize a quadratic function.
+
+![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/xAQBlqaaEeawbAp5ByfpEg_24e9420f16fdd758ccb7097788f879e7_Screenshot-2016-11-09-08.36.49.png?expiry=1484870400000&hmac=lMdowLVZ8zIofg3Tk_TCLWNBKk5WDrwZNgfeeEwwzsQ)
+
+
+The ellipses shown above are the contours of a quadratic function. Also shown is the trajectory taken by gradient descent, which was initialized at (48,30). The x’s in the figure (joined by straight lines) mark the successive values of θ that gradient descent went through as it converged to its minimum.
