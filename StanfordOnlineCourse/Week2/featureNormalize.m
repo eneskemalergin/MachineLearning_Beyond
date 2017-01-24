@@ -10,14 +10,15 @@ function [X_norm, mu, sigma] = featureNormalize(X)
   mu = zeros(1, size(X, 2));
   sigma = zeros(1, size(X, 2));
 
-  mu    = mean(X)
+  % Get the mean of X
+  mu = mean(X)
+  % Get the Standard Deviation
   sigma = std(X)
 
-  indicies = 1:size(X, 2);
-
-  for i = indicies,
-    XminusMu  = X(:, i) - mu(i);
-    X_norm(:, i) = XminusMu / sigma(i);
+  % Iterate over the X
+  for iter = 1:size(X, 2)
+    % For each Xi update value in X_norm 
+    X_norm(:,iter) = (X(:,iter) - mu(iter)) / sigma(iter);
   end;
 
 end;
