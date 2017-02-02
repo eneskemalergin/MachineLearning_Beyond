@@ -10,7 +10,7 @@ function [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters)
   for iter = 1:num_iters
 
 
-      theta = theta - alpha * (1/m) * sum((X*theta-y).*X)'
+      theta = theta - alpha * (1/m) * sum((X*theta-y).*X)';
 
       % Save the cost J in every iteration
       J_history(iter) = computeCost(X, y, theta);
