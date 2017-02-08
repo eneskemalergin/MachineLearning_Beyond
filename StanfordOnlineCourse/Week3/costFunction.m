@@ -10,16 +10,7 @@ function [J, grad] = costFunction(theta, X, y)
   J = 0;
   grad = zeros(size(theta));
 
-  % Calculating J
-  H = sigmoid(X*theta);
-  T = y.*log(H) + (1 - y).*log(1 - H);
-  J = -1/m*sum(T);
-
-  % Compute grad
-  for i = 1 : m,
-	   grad = grad + (H(i) - y(i)) * X(i,:)';
-  end
-
-  grad = 1/m*grad;
+  J = (1 / m) * sum( -y'*log(sigmoid(X*theta)) - (1-y)'*log( 1 - sigmoid(X*theta)) );
+  grad = (1 / m) * sum( X .* repmat((sigmoid(X*theta) - y), 1, size(X,2)) );
 
 end

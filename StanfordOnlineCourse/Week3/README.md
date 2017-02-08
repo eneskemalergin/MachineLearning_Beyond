@@ -11,9 +11,10 @@
   - [sigmoid function](sigmoid.m)
 
 - Logistic Regression with Regularization:
-  - [Notebook Implementation]()
+  - [Notebook Implementation](regularized_logistic_regression_implementation.ipynb)
   - [Main Script](regularized_logistic_regression.m)
   - [plotData Function](plotData.m)
   - [costFunctionReg Function](costFunctionReg.m)
   - [mapFeature Function](mapFeature.m)
-  - []()
+  - [plotDecisionBoundary Function](plotDecisionBoundary.m)
+  - [predict Function](predict.m)
