@@ -2,7 +2,7 @@
 
 - [Notes](WeekNotes.ipynb)
 - Regularized Linear Regression and Bias-Variance:
-  - [Implementation]()
+  - [Implementation](reg_lin_reg_implementation.ipynb)
   - [Main Script](regularized_linear_regression_bias.m)
   - [linearRegCostFunction Function](linearRegCostFunction.m)
   - [trainLinearReg Function](trainLinearReg.m)

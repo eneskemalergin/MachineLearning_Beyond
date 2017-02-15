@@ -28,8 +28,7 @@ pause;
 theta = [1 ; 1];
 J = linearRegCostFunction([ones(m, 1) X], y, theta, 1);
 
-fprintf(['Cost at theta = [1 ; 1]: %f '...
-         '\n(this value should be about 303.993192)\n'], J);
+fprintf(['Cost at theta = [1 ; 1]: %f \n'], J);
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
@@ -39,9 +38,7 @@ pause;
 theta = [1 ; 1];
 [J, grad] = linearRegCostFunction([ones(m, 1) X], y, theta, 1);
 
-fprintf(['Gradient at theta = [1 ; 1]:  [%f; %f] '...
-         '\n(this value should be about [-15.303016; 598.250744])\n'], ...
-         grad(1), grad(2));
+fprintf(['Gradient at theta = [1 ; 1]:  [%f; %f] \n'], grad(1), grad(2));
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
@@ -66,11 +63,7 @@ pause;
 
 
 %% =========== Part 5: Learning Curve for Linear Regression =============
-%  Next, you should implement the learningCurve function.
-%
-%  Write Up Note: Since the model is underfitting the data, we expect to
-%                 see a graph with "high bias" -- Figure 3 in ex5.pdf
-%
+
 
 lambda = 0;
 [error_train, error_val] = learningCurve([ones(m, 1) X], y, [ones(size(Xval, 1), 1) Xval], yval, lambda);
