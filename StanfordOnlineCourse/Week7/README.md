@@ -11,3 +11,12 @@
   - [linearKernel Function](linearKernel.m)
   - [visualizeBoundary Function](visualizeBoundary.m)
   - [svmPredict Function](svmPredict.m)
+
+- Spam filter with SVM:
+  - [Notebook Implementation]()
+  - [Main](svm_spam.m)
+  - [readFile Function](readFile.m)
+  - [processEmail Function](processEmail.m)
+  - [getVocabList Function](getVocabList.m)
+  - [emailFeatures Function](emailFeatures.m)
+  - [porterStemmer Function](porterStemmer.m)
