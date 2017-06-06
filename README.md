@@ -10,7 +10,6 @@ In this repository, I am going to follow the mind map and store the algorithms, 
   - Stanford Machine Learning Class
 
 ### 1. Regression Algorithms
-  - Ordinary Least Squares Regression (OLSR)
   - Linear Regression
   - Logistic Regression
   - Stepwise Regression
